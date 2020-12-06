@@ -1,0 +1,243 @@
+html {
+	font-family: Arimo, sans-serif;
+}
+
+body {
+	margin: 8px 7.5vw;
+}
+
+h1 {
+	font-size: 1.1rem;
+	margin: 0;
+	color: white;
+}
+
+h4 {
+	font-size: 1rem;
+	margin: 0;
+}
+
+h5 {
+	font-size: 0.9rem;
+	font-weight: lighter;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.hidden {
+	display: none;
+}
+
+nav {
+	display: flex;
+	background-color: rgb(101, 33, 156);
+	color: rgb(255, 249, 167);
+	align-items: center;
+	padding: 5px 20px;
+	border-radius: 3px 3px 0 0;
+}
+
+.main-nav-links {
+	margin: 0 15px;
+}
+
+.nav-link {
+	font-size: 0.85rem;
+	margin: 0 3px;
+}
+
+.nav-right {
+	margin-left: auto;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color: rgb(210, 238, 255);
+	color: green;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 8px 18px 0;
+}
+
+form > * {
+	margin: 10px 0;
+}
+
+form label {
+	font-size: 0.9rem;
+	font-weight: 700;
+	display: inline-block;
+	width: 3.5rem;
+	text-align: right;
+	margin-right: 5px;
+}
+
+form input {
+	font-size: 0.8rem;
+	border: none;
+	border-radius: 2px;
+	padding: 3px;
+	width: 300px;
+	box-shadow: 0 0 3px 1px white;
+}
+
+form input:focus {
+	outline: none;
+	box-shadow: 0 0 4px 1px darkgray;
+}
+
+form > button {
+	width: 4rem;
+	margin: 5px 0px 15px 65px;
+	border: none;
+	border-radius: 4px;
+	padding: 2px;
+	font-size: 0.85rem;
+	background-color: rgb(182, 227, 255);
+	color: black;
+	cursor: pointer;
+	transition: all 0.15s;
+}
+
+form > button:hover {
+	background-color: dimgray;
+}
+
+form > hr {
+	margin: 0;
+	border: 0.5px solid lightgray;
+}
+
+.login-input label {
+	width: 70px;
+}
+
+.account-form button {
+	width: 4rem;
+	margin-left: 80px;
+}
+
+#create-account-form button {
+	padding: 10px;
+	width: 8rem;
+}
+
+.articles-list {
+	margin: 20px 5px;
+}
+
+.articles-list > li {
+	font-size: 0.7rem;
+	margin: 10px 0;
+	cursor: pointer;
+	border-bottom: 1px solid darkgreen;
+}
+
+.heart,
+.trash-alt,
+.pencil {
+	font-size: 0.75rem;
+	margin: 0 2px;
+	cursor: pointer;
+	color: rgb(22, 255, 22);
+}
+
+.trash-alt:hover {
+	color: rgb(255, 136, 0);
+}
+
+.pencil:hover {
+	color: darkblue;
+}
+
+.article-link > strong {
+	color: rgb(132, 0, 255);
+	font-size: 0.85rem;
+	font-weight: normal;
+	margin: 18px 0;
+}
+
+.article-link:hover {
+	text-decoration: none;
+	color: red;
+}
+.article-hostname {
+	color: grey;
+}
+
+.article-hostname:hover {
+	text-decoration: underline;
+}
+
+.article-author {
+	margin-top: 5px;
+	margin-left: 25px;
+	color: darkslateblue;
+}
+
+.article-username {
+	display: block;
+	margin-top: 5px;
+	margin-left: 25px;
+	color: black;
+}
+
+#favorited-articles,
+#filtered-articles,
+#my-articles {
+	list-style: none;
+	padding-left: 20px;
+}
+
+.account-forms-container {
+	padding-left: 20px;
+}
+
+#create-account-form button {
+	margin-bottom: 25px;
+}
+
+#user-profile {
+	padding: 10px 20px 20px;
+	font-size: 0.9rem;
+}
+
+#user-profile > * {
+	margin: 10px 0;
+}
+
+#lightstyle {
+	background-color: slateblue;
+	color: palegoldenrod;
+}
+#darkstyle {
+	background-color: whitesmoke;
+	color: darkblue;
+}
+
+/** responsive queries for tightening things up for mobile. */
+
+@media screen and (max-width: 576px) {
+	body {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	body {
+		max-width: 1200px;
+		margin: 8px auto;
+	}
+}
